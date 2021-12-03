@@ -1,1 +1,45 @@
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body{
+    background-color: #EF5D60;
+    margin: 0%;
+    padding: 0.05px;
+    display: flex;
+    justify-content: center;
+}
+
+.yin-yang{
+    position: absolute;
+    margin: 0;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background: black;
+    animation: movee 5s infinite;
+}
+
+@keyframes movee {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(20deg);
+    }
+    
+}
+
+.yin-yang::after{
+    content: '';
+    height: 500px;
+    overflow: hidden;
+    width: 10px;
+    position: absolute;
+    background-color: aliceblue;
+    transform: translate(450%,-101%);
+    top: 5%;
+    margin: 0%;
+}
