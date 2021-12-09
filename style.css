@@ -9,7 +9,7 @@ body{
     justify-content: center;
 }
 
-.yin-yang{
+.bob{
     position: absolute;
     margin: 0;
     top: 80%;
@@ -32,7 +32,7 @@ body{
     
 }
 
-.yin-yang::after{
+.bob::after{
     content: '';
     height: 500px;
     overflow: hidden;
